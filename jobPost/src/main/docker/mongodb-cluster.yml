@@ -1,0 +1,16 @@
+version: '2'
+services:
+  jobpost-mongodb:
+    image: mongo:4.0.10
+    ports:
+      - '27017:27017'
+    command: mongos --configdb jobpost-mongodb-config
+  jobpost-mongodb-node:
+    build:
+      context: .
+      dockerfile: mongodb/MongoDB.Dockerfile
+    command: mongod --replSet rs1 --noprealloc --smallfiles
+  jobpost-mongodb-config:
+    image: mongo:4.0.10
+    container_name: jobpost-mongodb-config
+    command: mongod --noprealloc --smallfiles --configsvr --dbpath /data/db

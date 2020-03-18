@@ -1,0 +1,86 @@
+{
+    "name": "Job",
+    "fields": [
+        {
+            "fieldName": "jobId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "clientName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "noOfPosition",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "positionName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "location",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "jobDesc",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength",
+                "required"
+            ],
+            "fieldValidateRulesMaxlength": 1000
+        },
+        {
+            "fieldName": "expReq",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "filledPosition",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "comments",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "startDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "endDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "closedOn",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "openedBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "closedBy",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190730071717",
+    "entityTableName": "job",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "jobPost",
+    "applications": "*",
+    "microserviceName": "jobPost"
+}

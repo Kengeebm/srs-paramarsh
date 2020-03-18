@@ -1,0 +1,34 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.paraamarsh"
+    },
+    "jhipsterVersion": "6.1.2",
+    "applicationType": "uaa",
+    "baseName": "paraamarshAuth",
+    "packageName": "com.paraamarsh",
+    "packageFolder": "com/paraamarsh",
+    "serverPort": "8888",
+    "authenticationType": "uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NDI1OGM0NTU4Mjc3YTEzZDkxM2IyZGVjM2NhYWE0OTMxMTk4NmFkZGM5OGEyYmVjZmVlZjliYTNjMzVhNWJkOWI4NDI3OTFlMjdjMmFlYWUwNzZhM2NlNDRlZDVlZjExMWE3ZTk1YmFmMGJmODc1NDhjNGU2Mjg1YTM3Zjc2MWE=",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "skipClient": true
+  }
+}

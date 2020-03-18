@@ -1,0 +1,16 @@
+version: '2'
+services:
+  paraamarshauth-mongodb:
+    image: mongo:4.0.10
+    ports:
+      - '27017:27017'
+    command: mongos --configdb paraamarshauth-mongodb-config
+  paraamarshauth-mongodb-node:
+    build:
+      context: .
+      dockerfile: mongodb/MongoDB.Dockerfile
+    command: mongod --replSet rs1 --noprealloc --smallfiles
+  paraamarshauth-mongodb-config:
+    image: mongo:4.0.10
+    container_name: paraamarshauth-mongodb-config
+    command: mongod --noprealloc --smallfiles --configsvr --dbpath /data/db

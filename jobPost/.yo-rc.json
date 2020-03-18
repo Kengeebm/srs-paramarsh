@@ -1,0 +1,36 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.paraamarsh.jobpost"
+    },
+    "jhipsterVersion": "6.1.2",
+    "applicationType": "microservice",
+    "baseName": "jobPost",
+    "packageName": "com.paraamarsh.jobpost",
+    "packageFolder": "com/paraamarsh/jobpost",
+    "serverPort": "8081",
+    "authenticationType": "uaa",
+    "uaaBaseName": "paraamarshAuth",
+    "cacheProvider": "no",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NDljNzRlNjVhMmJhZWZmMzkyNzljODFmZTg2ZjI0N2I4MjkyNDIwNzlkOGM2M2JkYTZlOWZjM2JjMmRkNDIyY2YxM2JmNjUxYWM5ZDYyZDNmMzhjMTMxMGU2YjM1ZGYxYjkyYTc5ZGE4OWFhZDk4M2ZjY2UxM2M4MTIyNDYwZmY=",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
